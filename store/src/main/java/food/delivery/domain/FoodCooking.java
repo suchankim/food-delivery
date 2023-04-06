@@ -27,6 +27,8 @@ public class FoodCooking {
 
     private String storeId;
 
+    private String customerId;
+
     @PostPersist
     public void onPostPersist() {
         OrderRejected orderRejected = new OrderRejected(this);
